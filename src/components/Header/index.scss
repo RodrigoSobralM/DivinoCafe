@@ -1,0 +1,112 @@
+.headerComp {
+  font-family: "Playfair Display";
+  width: 100%;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  h1 {
+    white-space: nowrap;
+  }
+
+  &__component {
+    padding: 0 40px 0 40px;
+  }
+  &__teste {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  &__lis {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  &__component {
+    padding-top: 33px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  &__component-text {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.mobile-menu-icon {
+  display: none; /* Por padrão, o ícone do menu está oculto em telas maiores */
+  cursor: pointer;
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  h1 {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 920px) {
+  .headerComp {
+    font-size: 10px;
+    &__component {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+}
+
+// @media (max-width: 940px) {
+
+@media (max-width: 485px) {
+  .headerComp {
+    font-size: 10px;
+    &__teste {
+      display: flex;
+    }
+    &__component {
+        padding: 0 40px 0 40px;
+    }
+    &__lis {
+      flex-direction: column;
+    }
+  }
+  .mobile-menu-icon {
+    display: block; /* Mostrar o ícone do menu em telas menores */
+  }
+  .headerComp__lis {
+    &.mobile-menu-open {
+      h1 {
+        display: none;
+      }
+    }
+  }
+}
