@@ -1,6 +1,7 @@
 export const UTLEQUIPAMENTOS_MOCK = [
   { 
-    id: 1, nome: "Toalha de banquete",
+    id: 1, 
+    nome: "Toalha de banquete",
     preco: 20,
     cortesia: "Para o cliente que contrata o coffee/almoço",
     tipo: "utensilio"

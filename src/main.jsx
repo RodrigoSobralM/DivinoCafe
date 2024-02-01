@@ -10,6 +10,10 @@ import Bebidas from "../Views/Cardapio/Bebidas/Bebidas";
 import DocesEBolos from "../Views/Cardapio/Doces&Bolos/DocesEBolos";
 import Ued from "../Views/Cardapio/Ued/Ued";
 import { SALGADOSFRITOS_MOCK } from "./mock/SalgadosMock";
+import { BEBIDAS_MOCK } from "./mock/BebidasMock";
+import { DOCES_MOCK } from "./mock/DocesMock";
+import { UTLEQUIPAMENTOS_MOCK } from "./mock/UtlEquipamentosMock";
+import { DESCARTAVEIS_MOCK } from "./mock/DescartaveisMock";
 
 const router = createBrowserRouter([
   {
@@ -30,15 +34,15 @@ const router = createBrowserRouter([
       },
       {
         path: "Bebidas", 
-        element: <Bebidas />,
+        element: <Bebidas data={BEBIDAS_MOCK}/>,
       },
       {
         path: "Doces&Bolos",
-        element: <DocesEBolos />,
+        element: <DocesEBolos data={DOCES_MOCK}/>,
       },
       {
         path: "Ued",
-        element: <Ued />,
+        element: <Ued data={[...UTLEQUIPAMENTOS_MOCK, ...DESCARTAVEIS_MOCK]}/>,
       },
     ],
   },
