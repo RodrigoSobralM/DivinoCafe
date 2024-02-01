@@ -56,7 +56,7 @@ const Header = () => {
                 </Link>
               </h1>
               <h1>
-                <Link to={"/Cardapio"} className="headerComp__component-text">
+                <Link to={"/Cardapio/Salgados"} className="headerComp__component-text">
                   Cardapio
                 </Link>
               </h1>

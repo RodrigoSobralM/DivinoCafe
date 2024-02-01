@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <div className="nOrcamento">
         <h1>ORÇAMENTO</h1>
-        <Link to={"/Cardapio"}>
+        <Link to={"/Cardapio/Salgados"}>
           <button>Solicite seu orçamento AQUI!</button>
         </Link>
       </div>

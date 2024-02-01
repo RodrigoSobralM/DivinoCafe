@@ -9,6 +9,7 @@ import Salgados from "../Views/Cardapio/Salgados/Salgados";
 import Bebidas from "../Views/Cardapio/Bebidas/Bebidas";
 import DocesEBolos from "../Views/Cardapio/Doces&Bolos/DocesEBolos";
 import Ued from "../Views/Cardapio/Ued/Ued";
+import { SALGADOSFRITOS_MOCK } from "./mock/SalgadosMock";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "Salgados",
-        element: <Salgados />,
+        element: <Salgados data={SALGADOSFRITOS_MOCK}/>,
       },
       {
         path: "Bebidas", 
