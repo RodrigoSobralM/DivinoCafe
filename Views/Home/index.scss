@@ -24,6 +24,7 @@
     }
 
     & h3{
+        width: 800px;
         font-size: 25px;
         margin-bottom: 20px;
     }
@@ -104,11 +105,27 @@
 
 @media (max-width: 800px) {
     .nServicos {
-       padding: 0 40px 0 40px; 
+       padding: 0 40px 0 40px;
+       & h3 {
+        width: 600px;
+       } 
     }
     
 }
 @media (max-width: 400px) {
+
+    .nServicos {
+        & h1 {
+            margin-top: 15px;
+            font-size: 30px;
+        }
+        & h2 {
+            font-size: 30px;
+        }
+        & h3 {
+            width: 300px;
+        }
+    }
     .nOrcamento {
         button {
             width: 200px;

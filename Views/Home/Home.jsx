@@ -15,13 +15,11 @@ const Home = () => {
           <h2>Coffe Break</h2>
           <h3>
             Intervalo estratégico em reuniões, seminários, cursos ou congressos,
-            <br></br>
-            proporcionando um momento valaioso de networkin.
+            proporcionando um momento valioso de networkin.
           </h3>
           <h2>Coquetéis</h2>
           <h3>
             Proporciona um momento de descontração e valorização do seu evento,{" "}
-            <br></br>
             produto, ou serviço junto aos seus clientes e colaboradores.
           </h3>
         </div>

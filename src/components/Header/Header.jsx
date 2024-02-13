@@ -40,7 +40,7 @@ const Header = () => {
                 <div className="bar"></div>
               </div>
               <h1>
-                <Link to={"/Site"} className="headerComp__component-text">
+                <Link to={"/Home"} className="headerComp__component-text">
                   Home
                 </Link>
               </h1>
@@ -51,7 +51,7 @@ const Header = () => {
                 Sobre Nós
               </h1>
               <h1>
-                <Link to={"/galeria"} className="headerComp__component-text">
+                <Link to={"/Galeria"} className="headerComp__component-text">
                   Galeria
                 </Link>
               </h1>

@@ -1,4 +1,6 @@
 import React from 'react'
+import LinhaDivisoraCardapio from '../../../src/components/LinhaDivisoraCardapio/LinhaDivisoraCardapio'
+import "./index.scss"
 
 const Bebidas = ( { data } ) => {
     console.log(data)
@@ -12,15 +14,16 @@ const Bebidas = ( { data } ) => {
     }
 
   return (
-    <div>
+    <div className='bebidas'>
         {Object.entries(filters).map(([nome, item]) => (
-            <div key={nome}>
+            <div key={nome} className=''>
                 <h1>{nome}</h1>
+                <LinhaDivisoraCardapio />
                 {item.map((item, idx) => (
-                    <li key={idx}>
-                        {item.nome}
-                        R${item.preco}
-                    </li>
+                    <div key={idx} className='bebidas__item'>
+                        <p>{item.nome}</p>
+                        <p>R${item.preco}</p>
+                    </div>
                 ))}
             </div>
         ))}

@@ -1,0 +1,10 @@
+.docesEBolos {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        .titleItem {
+            width: 500px;
+        }
+    }
+}

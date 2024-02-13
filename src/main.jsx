@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+import "./index.scss";
 import IntroPage from "../Views/IntroPage/IntroPage";
 import Home from "../Views/Home/Home";
 import Cardapio from "../Views/Cardapio/Cardapio";
@@ -14,6 +14,8 @@ import { BEBIDAS_MOCK } from "./mock/BebidasMock";
 import { DOCES_MOCK } from "./mock/DocesMock";
 import { UTLEQUIPAMENTOS_MOCK } from "./mock/UtlEquipamentosMock";
 import { DESCARTAVEIS_MOCK } from "./mock/DescartaveisMock";
+import Galeria from "../Views/Galeria/Galeria";
+import { GALERIA_MOCK } from "./mock/GaleriaImgsMock";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <Home />,
+  },
+  {
+    path: "/Galeria",
+    element: <Galeria data={GALERIA_MOCK}/>,
   },
   {
     path: "/Cardapio",
